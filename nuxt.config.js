@@ -29,7 +29,10 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['ress', '@/assets/scss/common.scss'],
+  styleResources: {
+    scss: ['@/assets/scss/_variables.scss'],
+  },
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
