@@ -1,1 +1,33 @@
 @import './variables';
+@import './mixins';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+
+  color: $color-black;
+  font-size: 1.6rem;
+  background: linear-gradient(180deg, #d7e2d4 0%, #f2ddc1 55%, #dfd4cc 100%);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
