@@ -67,7 +67,7 @@ export default {
   build: {},
   webfontloader: {
     google: {
-      families: ['Sansita:400,800'],
+      families: ['Sansita:400,800', 'Noto+Sans+JP:300,400,500,700'],
     },
   },
 }

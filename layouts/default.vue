@@ -1,7 +1,10 @@
 <template>
   <div class="page-container">
     <TheHeader />
-    <Nuxt />
+    <main>
+      <Nuxt />
+    </main>
+    <TheFooter />
   </div>
 </template>
 
