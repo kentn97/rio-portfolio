@@ -4,7 +4,7 @@
     <main>
       <Nuxt />
     </main>
-    <TheFooter />
+    <TheFooter class="page-footer" />
   </div>
 </template>
 
@@ -16,10 +16,21 @@ export default Vue.extend({})
 
 <style lang="scss" scoped>
 .page-container {
+  position: relative;
   width: 114rem;
   margin: 3rem auto;
 
   background-color: #fff;
   box-shadow: 0 2rem 4rem rgba($color-black, 0.08);
+}
+
+.page-footer {
+  position: fixed;
+  top: 60rem;
+  left: auto;
+  margin-left: 4rem;
+
+  transform-origin: top left;
+  transform: rotate(-90deg);
 }
 </style>
