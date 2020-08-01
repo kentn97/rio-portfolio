@@ -31,7 +31,7 @@ export default {
    */
   css: ['ress', '@/assets/scss/common.scss'],
   styleResources: {
-    scss: ['@/assets/scss/_variables.scss'],
+    scss: ['@/assets/scss/_variables.scss', '@/assets/scss/_mixins.scss'],
   },
   /*
    ** Plugins to load before mounting the App
@@ -46,13 +46,14 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/style-resources'],
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    'nuxt-webfontloader',
   ],
   /*
    ** Axios module configuration
@@ -64,4 +65,9 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  webfontloader: {
+    google: {
+      families: ['Sansita:400,800', 'Noto+Sans+JP:300,400,500,700'],
+    },
+  },
 }
