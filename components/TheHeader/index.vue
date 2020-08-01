@@ -49,9 +49,6 @@ export default Vue.extend({})
     align-items: center;
   }
 
-  &__item {
-  }
-
   &__link {
     display: block;
 

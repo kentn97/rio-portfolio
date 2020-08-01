@@ -5,6 +5,10 @@
       <SnsList class="top__sns" />
     </div>
     <h2 class="top__desc"><em>"伝わる"</em>イラストを最大限表現します</h2>
+    <div class="top__cards">
+      <LinkCard link-to="works" />
+      <LinkCard link-to="order" />
+    </div>
   </div>
 </template>
 
@@ -16,7 +20,7 @@ export default Vue.extend({})
 
 <style lang="scss" scoped>
 .top {
-  padding: 6rem 0 6rem 12rem;
+  padding: 6rem 12rem;
 
   &__head-wrap {
     display: flex;
@@ -38,7 +42,7 @@ export default Vue.extend({})
   }
 
   &__desc {
-    margin-top: 4rem;
+    margin-top: 6rem;
 
     font-size: 2.8rem;
     font-weight: 700;
@@ -47,6 +51,15 @@ export default Vue.extend({})
       font-size: 3.6rem;
       font-style: normal;
     }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 6rem;
+
+    margin-top: 12rem;
   }
 }
 </style>
