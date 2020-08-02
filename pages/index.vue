@@ -4,7 +4,10 @@
       <h1 class="top__heading">RIO</h1>
       <SnsList class="top__sns" />
     </div>
-    <h2 class="top__desc"><em>"伝わる"</em>イラストを最大限表現します</h2>
+    <h2 class="top__desc">
+      <span><em>"伝わる"</em>イラストを最大限表現します</span
+      ><span>イラストレーター / 似顔絵アーティスト</span>
+    </h2>
     <div class="top__cards">
       <LinkCard link-to="works" />
       <LinkCard link-to="order" />
@@ -50,6 +53,10 @@ export default Vue.extend({})
     & em {
       font-size: 3.6rem;
       font-style: normal;
+    }
+
+    & span {
+      display: block;
     }
   }
 

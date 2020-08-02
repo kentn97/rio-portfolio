@@ -18,7 +18,7 @@ export default Vue.extend({})
 .page-container {
   position: relative;
   width: 114rem;
-  margin: 3rem auto;
+  margin: 0 auto;
 
   background-color: #fff;
   box-shadow: 0 2rem 4rem rgba($color-black, 0.08);
