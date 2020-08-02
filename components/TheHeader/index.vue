@@ -13,7 +13,7 @@
           <n-link to="/works" class="header__link">Works</n-link>
         </li>
         <li class="header__item">
-          <n-link to="/order" class="header__link header__btn">Order</n-link>
+          <n-link to="/order" class="header__btn">Order</n-link>
         </li>
       </ul>
     </nav>
@@ -23,7 +23,13 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  data() {
+    return {
+      activeMenu: '/',
+    }
+  },
+})
 </script>
 
 <style lang="scss" scoped>
@@ -49,12 +55,26 @@ export default Vue.extend({})
     align-items: center;
   }
 
-  &__link {
+  &__link,
+  &__btn {
     display: block;
 
     font-family: 'Sansita', sans-serif;
     font-size: 1.8rem;
     letter-spacing: 0.03em;
+  }
+
+  &__link {
+    transition: color 0.2s;
+
+    &:hover,
+    &:focus {
+      color: $color-black-light;
+    }
+  }
+
+  &__link.nuxt-link-exact-active {
+    color: $color-green;
   }
 
   &__btn {
@@ -63,6 +83,12 @@ export default Vue.extend({})
     background-color: $color-skin;
 
     @include btn-shadow-1;
+    transition: filter 0.2s;
+
+    &:hover,
+    &:focus {
+      filter: brightness(0.95);
+    }
   }
 }
 </style>
