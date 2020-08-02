@@ -1,5 +1,5 @@
 <template>
-  <div class="page-container">
+  <div class="page-container" :class="$route.path === '/' && 'bg'">
     <TheHeader />
     <main>
       <Nuxt />
@@ -22,6 +22,12 @@ export default Vue.extend({})
 
   background-color: #fff;
   box-shadow: 0 2rem 4rem rgba($color-black, 0.08);
+
+  &.bg {
+    background-image: url('~@/assets/imgs/bg-arts.png');
+    background-position: right -6.5rem top;
+    background-size: auto 100%;
+  }
 }
 
 .page-footer {
