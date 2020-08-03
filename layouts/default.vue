@@ -32,7 +32,7 @@ export default Vue.extend({})
 
 .page-footer {
   position: fixed;
-  top: 60rem;
+  top: 66rem;
   left: auto;
   margin-left: 4rem;
 
